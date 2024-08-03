@@ -11,7 +11,7 @@ const page = async () => {
     <>
       <h2>Employee List</h2>
       <div className="home-page">
-        {employees.length > 0 ? (
+        {employees && employees.length > 0 ? (
           employees.map((employee: Employee) => (
             <Link
               href={`/employee/${employee._id}`}
