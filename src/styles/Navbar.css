@@ -1,0 +1,39 @@
+.navbar {
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: fit-content;
+  background-color: #ffffff;
+  margin: 10px 10px;
+  gap: 10px;
+  border: 1px solid #e4e4e4;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #474747;
+  transition: width 0.3s;
+}
+
+.navbar a:hover::after {
+  width: 100%;
+  transition: width 0.3s;
+}
+
+.navbar a:hover {
+  color: #474747;
+  transition: all 0.3s ease;
+}

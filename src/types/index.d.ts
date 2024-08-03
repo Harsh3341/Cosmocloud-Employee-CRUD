@@ -5,8 +5,8 @@ export interface Employee {
   address: {
     line1: string;
     city: string;
-    zipCode: number;
+    zipCode: string;
     country: string;
   };
-  phone_num: number;
+  phone_num: string;
 }

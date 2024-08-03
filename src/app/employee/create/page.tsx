@@ -26,38 +26,38 @@ const page = () => {
   };
 
   return (
-    <div>
-      <form action={handleFormSubmit}>
+    <div className="form-container">
+      <h2>Add Employee</h2>
+      <form action={handleFormSubmit} className="form">
         <div>
           <label>Name</label>
-          <input type="text" name="name" />
+          <input name="name" />
         </div>
         <div>
-          <label>Address</label>
           <div>
-            <label>Line 1</label>
-            <input name="line1" type="text" />
+            <label>Address</label>
+            <input name="line1" />
           </div>
           <div>
             <label>City</label>
-            <input name="city" type="text" />
+            <input name="city" />
           </div>
           <div>
             <label>Zip Code</label>
-            <input name="zipCode" type="number" />
+            <input name="zipCode" />
           </div>
           <div>
             <label>Country</label>
-            <input name="country" type="text" />
+            <input name="country" />
           </div>
         </div>
         <div>
           <label>Phone Number</label>
-          <input name="phoneNumber" type="number" />
+          <input name="phoneNumber" />
         </div>
         <div>
           <label>Email</label>
-          <input name="email" type="email" />
+          <input name="email" />
         </div>
         <button type="submit">Submit</button>
       </form>
